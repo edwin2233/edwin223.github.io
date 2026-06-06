@@ -80,7 +80,7 @@ background:#5b5cf0;
 
 /* HERO */
 .hero{
-padding:180px 20px 80px;
+padding:180px 20px 60px;
 text-align:center;
 }
 
@@ -106,17 +106,9 @@ background:linear-gradient(90deg,#5b5cf0,#9b36d4,#ff2e93);
 -webkit-text-fill-color:transparent;
 }
 
-.hero p{
-max-width:800px;
-margin:auto;
-font-size:24px;
-line-height:1.8;
-color:#555;
-}
-
 .btn{
 display:inline-block;
-margin-top:35px;
+margin-top:25px;
 padding:18px 40px;
 background:#071133;
 color:white;
@@ -134,7 +126,7 @@ transform:translateY(-3px);
 
 /* SECTIONS */
 section{
-padding:100px 20px;
+padding:90px 20px;
 }
 
 .section-title{
@@ -144,16 +136,19 @@ margin-bottom:40px;
 }
 
 /* ABOUT */
-.about{
+.about-content{
 max-width:900px;
 margin:auto;
 text-align:center;
+}
+
+.about-content p{
 font-size:22px;
 line-height:1.8;
 color:#555;
 }
 
-/* SKILLS */
+/* SKILLS GRID */
 .skills-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -241,7 +236,6 @@ padding:25px;
 /* MOBILE */
 @media(max-width:768px){
 .hero h1{font-size:48px;}
-.hero p{font-size:18px;}
 .section-title{font-size:38px;}
 .job-title{font-size:30px;}
 }
@@ -252,7 +246,7 @@ padding:25px;
 
 <body>
 
-<!-- NAV -->
+<!-- HEADER -->
 <header>
 <div class="logo">ED<span>WIN</span></div>
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
@@ -291,9 +285,11 @@ Data Analyst &<br>
 
 <h2 class="section-title">About Me</h2>
 
-<p class="about">
-I am Edwin Nyaburi, a Data Analyst and Business Intelligence professional with expertise in Excel, SQL, Power BI, Python, and statistics. I transform complex datasets into actionable insights for business decision-making and performance improvement.
+<div class="about-content">
+<p>
+I am Edwin Nyaburi, a Data Analyst and Business Intelligence professional with expertise in Excel, SQL, Power BI, Python, and statistics. I transform complex datasets into actionable insights for decision-making and business performance improvement.
 </p>
+</div>
 
 </section>
 
@@ -328,7 +324,7 @@ I am Edwin Nyaburi, a Data Analyst and Business Intelligence professional with e
 <div class="job-title">Data Analyst</div>
 
 <p>
-Collect, clean and analyze banking data. Build dashboards, prepare reports, and support decision-making through data insights.
+Collect, clean, and analyze banking data. Build dashboards, prepare reports, and support business decisions using data insights.
 </p>
 
 </div>
@@ -353,8 +349,8 @@ Collect, clean and analyze banking data. Build dashboards, prepare reports, and 
 </div>
 
 <div class="project-card">
-<h3>Customer Churn Model</h3>
-<p>Python model predicting customer churn.</p>
+<h3>Customer Churn Analysis</h3>
+<p>Python + SQL model predicting customer churn.</p>
 </div>
 
 </div>
