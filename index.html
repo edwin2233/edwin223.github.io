@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Edwin Nyaburi | Data Analyst</title>
 
 <style>
@@ -22,7 +21,7 @@ background:#f5f7fb;
 color:#111827;
 }
 
-/* NAVBAR */
+/* HEADER */
 header{
 position:fixed;
 top:0;
@@ -42,9 +41,7 @@ font-size:32px;
 font-weight:bold;
 }
 
-.logo span{
-color:#5b5cf0;
-}
+.logo span{color:#5b5cf0;}
 
 .menu-btn{
 font-size:35px;
@@ -62,9 +59,7 @@ padding-top:80px;
 transition:.4s;
 }
 
-.nav-menu.active{
-right:0;
-}
+.nav-menu.active{right:0;}
 
 .nav-menu a{
 display:block;
@@ -74,9 +69,7 @@ text-decoration:none;
 font-size:18px;
 }
 
-.nav-menu a:hover{
-background:#5b5cf0;
-}
+.nav-menu a:hover{background:#5b5cf0;}
 
 /* HERO */
 .hero{
@@ -165,7 +158,10 @@ border-radius:20px;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 font-size:18px;
 font-weight:bold;
-  .skills-section{
+}
+
+/* TECH SKILLS BARS */
+.skills-section{
 max-width:900px;
 margin:auto;
 }
@@ -178,11 +174,6 @@ margin-bottom:40px;
 display:flex;
 justify-content:space-between;
 margin-bottom:10px;
-}
-
-.skill-name{
-font-weight:bold;
-color:#333;
 }
 
 .skill-percent{
@@ -201,37 +192,19 @@ overflow:hidden;
 .progress-bar{
 height:100%;
 background:linear-gradient(90deg,#5b5cf0,#ff2e93);
-border-radius:20px;
-}
 }
 
 /* EXPERIENCE */
-.line{
-width:120px;
-height:8px;
-background:#5b5cf0;
-margin:20px auto;
-border-radius:20px;
-}
-
 .experience-card{
 background:#eef1ff;
 padding:40px;
 border-radius:30px;
 max-width:900px;
-margin:30px auto;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-.date{
-font-weight:bold;
-color:#5b5cf0;
-letter-spacing:2px;
+margin:auto;
 }
 
 .job-title{
 font-size:40px;
-margin-top:15px;
 background:linear-gradient(90deg,#5b5cf0,#ff2e93);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
@@ -254,14 +227,8 @@ box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 /* CONTACT */
-.contact{
-text-align:center;
-}
-
-.contact p{
-font-size:22px;
-margin:10px 0;
-}
+.contact{text-align:center;}
+.contact p{font-size:22px;margin:10px 0;}
 
 /* FOOTER */
 footer{
@@ -275,16 +242,14 @@ padding:25px;
 @media(max-width:768px){
 .hero h1{font-size:48px;}
 .section-title{font-size:38px;}
-.job-title{font-size:30px;}
+.job-title{font-size:28px;}
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="logo">ED<span>WIN</span></div>
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
@@ -301,10 +266,7 @@ padding:25px;
 
 <!-- HERO -->
 <section class="hero">
-
-<div class="badge">
-DATA ANALYST AND BUSINESS INTELLIGENCE
-</div>
+<div class="badge">DATA ANALYST AND BUSINESS INTELLIGENCE</div>
 
 <h1>
 Data Analyst &<br>
@@ -312,184 +274,101 @@ Data Analyst &<br>
 <span class="gradient">Specialist</span>
 </h1>
 
-<a href="Edwin_Nyaburi_CV.pdf" class="btn" download>
-📄 Download CV
-</a>
-
+<a href="Edwin_Nyaburi_CV.pdf" class="btn" download>📄 Download CV</a>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-
 <h2 class="section-title">About Me</h2>
 
 <div class="about-content">
 <p>
-I am Edwin Nyaburi, a Data Analyst and Business Intelligence professional with expertise in Excel, SQL, Power BI, Python, and statistics. I transform complex datasets into actionable insights for decision-making and business performance improvement.
+I am Edwin Nyaburi, a Data Analyst and Business Intelligence professional with expertise in Excel, SQL, Power BI, Python, and statistics. I turn data into actionable insights for business decisions.
 </p>
 </div>
-
 </section>
 
-<!-- SKILLS -->
+<!-- SKILLS GRID -->
 <section id="skills">
-<section id="skills">
-
-<h2 class="section-title">Technical Skills</h2>
-
-<div class="skills-section">
-
-    <!-- Skill 1 -->
-    <div class="skill">
-        <div class="skill-info">
-            <span class="skill-name">Microsoft Excel & Advanced Analytics</span>
-            <span class="skill-percent">95%</span>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width:95%;"></div>
-        </div>
-    </div>
-
-    <!-- Skill 2 -->
-    <div class="skill">
-        <div class="skill-info">
-            <span class="skill-name">SQL & Database Management</span>
-            <span class="skill-percent">90%</span>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width:90%;"></div>
-        </div>
-    </div>
-
-    <!-- Skill 3 -->
-    <div class="skill">
-        <div class="skill-info">
-            <span class="skill-name">Power BI & Dashboard Development</span>
-            <span class="skill-percent">92%</span>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width:92%;"></div>
-        </div>
-    </div>
-
-    <!-- Skill 4 -->
-    <div class="skill">
-        <div class="skill-info">
-            <span class="skill-name">Python for Data Analysis</span>
-            <span class="skill-percent">85%</span>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width:85%;"></div>
-        </div>
-    </div>
-
-    <!-- Skill 5 -->
-    <div class="skill">
-        <div class="skill-info">
-            <span class="skill-name">Statistics & Forecasting</span>
-            <span class="skill-percent">88%</span>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width:88%;"></div>
-        </div>
-    </div>
-
-</div>
-
-</section>
 <h2 class="section-title">Technical Skills</h2>
 
 <div class="skills-grid">
-<div class="skill-card">Excel & Advanced Analytics</div>
-<div class="skill-card">SQL & Database Management</div>
-<div class="skill-card">Power BI & Dashboards</div>
-<div class="skill-card">Python for Data Analysis</div>
-<div class="skill-card">Statistics & Forecasting</div>
+<div class="skill-card">Excel</div>
+<div class="skill-card">SQL</div>
+<div class="skill-card">Power BI</div>
+<div class="skill-card">Python</div>
+<div class="skill-card">Statistics</div>
 </div>
 
+<!-- TECH BARS -->
+<div class="skills-section">
+
+<div class="skill">
+<div class="skill-info">
+<span>SQL & Database Management</span>
+<span class="skill-percent">90%</span>
+</div>
+<div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-info">
+<span>Power BI</span>
+<span class="skill-percent">92%</span>
+</div>
+<div class="progress"><div class="progress-bar" style="width:92%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-info">
+<span>Excel</span>
+<span class="skill-percent">95%</span>
+</div>
+<div class="progress"><div class="progress-bar" style="width:95%"></div></div>
+</div>
+
+</div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-
-<h2 class="section-title">Professional Journey</h2>
-
-<div class="line"></div>
+<h2 class="section-title">Experience</h2>
 
 <div class="experience-card">
-
-<div class="date">2024 - PRESENT</div>
-
 <h3>KCB Bank</h3>
-
 <div class="job-title">Data Analyst</div>
-
-<p>
-Collect, clean, and analyze banking data. Build dashboards, prepare reports, and support business decisions using data insights.
-</p>
-
+<p>Collect and analyze banking data, build dashboards and reports.</p>
 </div>
-
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-
 <h2 class="section-title">Projects</h2>
 
 <div class="project-grid">
-
-<div class="project-card">
-<h3>Bank Loan Dashboard</h3>
-<p>Power BI dashboard tracking loan performance.</p>
+<div class="project-card">Loan Dashboard</div>
+<div class="project-card">Sales Dashboard</div>
+<div class="project-card">Churn Analysis</div>
 </div>
-
-<div class="project-card">
-<h3>Sales Analytics</h3>
-<p>Interactive KPI dashboard built with Power BI.</p>
-</div>
-
-<div class="project-card">
-<h3>Customer Churn Analysis</h3>
-<p>Python + SQL model predicting customer churn.</p>
-</div>
-
-</div>
-
 </section>
 
 <!-- GITHUB -->
 <section id="github">
-
-<h2 class="section-title">GitHub Portfolio</h2>
+<h2 class="section-title">GitHub</h2>
 
 <div class="project-card" style="max-width:700px;margin:auto;text-align:center;">
-
-<h3>Explore My Work</h3>
-<p>View my SQL, Python and Power BI projects.</p>
-
-<a href="https://github.com/YOUR_USERNAME" target="_blank" class="btn">
-View GitHub
-</a>
-
+<a class="btn" href="https://github.com/YOUR_USERNAME">View GitHub</a>
 </div>
-
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-
-<h2 class="section-title">Contact Me</h2>
-
+<h2 class="section-title">Contact</h2>
 <p>Email: edwinnyaburi4@gmail.com</p>
-<p>LinkedIn: linkedin.com/in/your-profile</p>
-<p>GitHub: github.com/YOUR_USERNAME</p>
-
 </section>
 
-<!-- FOOTER -->
 <footer>
-© 2026 Edwin Nyaburi | Data Analyst
+© 2026 Edwin Nyaburi
 </footer>
 
 <script>
